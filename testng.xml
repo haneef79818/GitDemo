@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests"  name="Suite">
+<listeners>
+	<listener class-name="seleniumFrameworkProject.Listeners.Listeners"></listener>
+</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="seleniumFrameworkProject.LoginFailedValidation"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test2S">
+    <classes>
+      <class name="seleniumFrameworkProject.StandAloneTest"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-16T05:33:12Z" name="Suite" finished-at="2024-11-16T05:33:46Z" duration-ms="34737">
+    <groups>
+    </groups>
+    <test started-at="2024-11-16T05:33:12Z" name="Test" finished-at="2024-11-16T05:33:24Z" duration-ms="12443">
+      <class name="seleniumFrameworkProject.LoginFailedValidation">
+        <test-method is-config="true" signature="lunchApplication()[pri:0, instance:seleniumFrameworkProject.LoginFailedValidation@3cce5371]" started-at="2024-11-16T05:33:12Z" name="lunchApplication" finished-at="2024-11-16T05:33:18Z" duration-ms="6203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lunchApplication -->
+        <test-method signature="verifyLoginFailed()[pri:0, instance:seleniumFrameworkProject.LoginFailedValidation@3cce5371]" started-at="2024-11-16T05:33:18Z" name="verifyLoginFailed" finished-at="2024-11-16T05:33:24Z" duration-ms="5606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginFailed -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:seleniumFrameworkProject.LoginFailedValidation@3cce5371]" started-at="2024-11-16T05:33:24Z" name="CloseBrowser" finished-at="2024-11-16T05:33:24Z" duration-ms="620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- seleniumFrameworkProject.LoginFailedValidation -->
+    </test> <!-- Test -->
+    <test started-at="2024-11-16T05:33:12Z" name="Test2S" finished-at="2024-11-16T05:33:46Z" duration-ms="34737">
+      <class name="seleniumFrameworkProject.StandAloneTest">
+        <test-method is-config="true" signature="lunchApplication()[pri:0, instance:seleniumFrameworkProject.StandAloneTest@3932c79a]" started-at="2024-11-16T05:33:12Z" name="lunchApplication" finished-at="2024-11-16T05:33:20Z" duration-ms="7946" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lunchApplication -->
+        <test-method signature="placeOrder(java.util.HashMap)[pri:0, instance:seleniumFrameworkProject.StandAloneTest@3932c79a]" started-at="2024-11-16T05:33:20Z" name="placeOrder" data-provider="getData" finished-at="2024-11-16T05:33:36Z" duration-ms="15715" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{userName=test.user7981@gmail.com, password=Demo@123, product=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeOrder -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:seleniumFrameworkProject.StandAloneTest@3932c79a]" started-at="2024-11-16T05:33:36Z" name="CloseBrowser" finished-at="2024-11-16T05:33:36Z" duration-ms="453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="lunchApplication()[pri:0, instance:seleniumFrameworkProject.StandAloneTest@3932c79a]" started-at="2024-11-16T05:33:36Z" name="lunchApplication" finished-at="2024-11-16T05:33:40Z" duration-ms="3515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lunchApplication -->
+        <test-method signature="verifyOrder()[pri:0, instance:seleniumFrameworkProject.StandAloneTest@3932c79a]" started-at="2024-11-16T05:33:40Z" name="verifyOrder" finished-at="2024-11-16T05:33:46Z" depends-on-methods="seleniumFrameworkProject.StandAloneTest.placeOrder" duration-ms="6270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrder -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:seleniumFrameworkProject.StandAloneTest@3932c79a]" started-at="2024-11-16T05:33:46Z" name="CloseBrowser" finished-at="2024-11-16T05:33:46Z" duration-ms="576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- seleniumFrameworkProject.StandAloneTest -->
+    </test> <!-- Test2S -->
+  </suite> <!-- Suite -->
+</testng-results>
