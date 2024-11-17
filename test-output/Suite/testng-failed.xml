@@ -10,7 +10,7 @@
         <methods>
           <include name="verifyOrder"/>
           <include name="CloseBrowser"/>
-          <include name="placeOrder"/>
+          <include name="placeOrder" invocation-numbers="0"/>
           <include name="lunchApplication"/>
         </methods>
       </class> <!-- seleniumFrameworkProject.StandAloneTest -->

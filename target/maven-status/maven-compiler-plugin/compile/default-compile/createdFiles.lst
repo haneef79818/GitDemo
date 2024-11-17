@@ -1,8 +1,0 @@
-seleniumFrameworkProject\pageObjects\ShoppingPage.class
-seleniumFrameworkProject\pageObjects\CheckOutPage.class
-seleniumFrameworkProject\AbstractComponents\AbstractComponents.class
-seleniumFrameworkProject\pageObjects\OrdersPage.class
-seleniumFrameworkProject\resources\ExtentReportsTest.class
-seleniumFrameworkProject\pageObjects\CartPage.class
-seleniumFrameworkProject\pageObjects\ConfirmationPage.class
-seleniumFrameworkProject\pageObjects\LandingPageClass.class

@@ -3,6 +3,8 @@ package seleniumFrameworkProject.Listeners;
 import java.io.File;
 import java.io.IOException;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -12,6 +14,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
+import io.qameta.allure.Attachment;
 import seleniumFrameworkProject.TestComponents.BaseTest;
 import seleniumFrameworkProject.resources.ExtentReportsTest;
 
@@ -31,6 +34,12 @@ public class Listeners extends BaseTest implements ITestListener{
 		// TODO Auto-generated method stub
 		
 	}
+	
+	@Attachment
+	public byte[] attachScreenshot(WebDriver driver) {
+		return ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+		
+	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
@@ -47,11 +56,13 @@ public class Listeners extends BaseTest implements ITestListener{
 		String filePath = null;
 		try {
 			filePath = takeScreenShot(result.getMethod().getMethodName(), driver);
+			attachScreenshot(driver);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		extendsTest.get().addScreenCaptureFromPath(filePath,result.getMethod().getMethodName());
+		
 	}
 
 	@Override
@@ -78,5 +89,7 @@ public class Listeners extends BaseTest implements ITestListener{
 		// TODO Auto-generated method stub
 		er.flush();
 	}
+	
+	
 
 }
